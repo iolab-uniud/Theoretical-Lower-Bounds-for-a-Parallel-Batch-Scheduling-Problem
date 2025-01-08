@@ -10,7 +10,7 @@ M.L. Lackner, F. Da Ros, and N. Musliu.
 
 ## Relevant Resources
 
-Additional material related to the parallel batch scheduling problem (OSP) can be found at the following links:
+Additional material related to the oven scheduling problem (OSP) can be found at the following links:
 
 - **Command-Line Interface (CLI) for the OSP problem**:  
   Includes a lower bound calculator and other functionalities for solving OSP problems.  
