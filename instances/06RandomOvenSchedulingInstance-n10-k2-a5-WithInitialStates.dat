@@ -1,0 +1,31 @@
+LengthSchedulingHorizon=371;
+nAttributes=5;
+SetupCosts=[[0, 0, 0, 0, 0], [0, 3, 0, 3, 2], [3, 1, 3, 3, 3], [2, 1, 3, 0, 0], [3, 0, 3, 3, 3], [3, 0, 2, 1, 0]];
+SetupTimes=[[0, 0, 0, 0, 0], [2, 1, 1, 0, 1], [2, 2, 2, 3, 2], [0, 2, 1, 2, 2], [0, 1, 1, 3, 2], [2, 0, 3, 0, 1]];
+nMachines=2;
+MinCap=[0, 0];
+MaxCap=[66, 55];
+
+initState=[5, 2];
+nShifts=5;
+ShiftStartTimes = [[151, 213, 237, 308, 365], [187, 196, 202, 313, 320]];
+ShiftEndTimes = [[172, 236, 301, 358, 371], [191, 200, 272, 319, 369]];
+nJobs=10;
+EligibleMachines = [{1, 2}, {2}, {1, 2}, {1}, {1, 2}, {1, 2}, {2}, {2}, {1}, {2}];
+EarliestStart=[8, 27, 15, 4, 3, 24, 11, 15, 14, 26];
+LatestEnd=[42, 39, 20, 19, 31, 49, 14, 26, 19, 40];
+MinTime=[10, 6, 4, 5, 9, 6, 1, 9, 2, 4];
+MaxTime=[10, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+JobSize=[12, 16, 9, 4, 13, 3, 8, 13, 17, 16];
+Attribute=[1, 4, 4, 2, 2, 4, 2, 4, 3, 4];
+
+upper_bound_integer_objective=6300;
+mult_factor_total_runtime=4;
+mult_factor_finished_toolate=600;
+mult_factor_total_setuptimes=0;
+mult_factor_total_setupcosts=2;
+running_time_bound=56;
+min_duration=1;
+max_duration=10;
+max_setup_time=3;
+max_setup_cost=3;
