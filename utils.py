@@ -1,3 +1,5 @@
+import numpy as np
+
 def get_n_jobs(instance_number):
     if instance_number < 21:
         return "10 jobs"
@@ -39,6 +41,8 @@ def perc_gap(sol,lb):
     if round(sol,6) == 0.0 and round(lb,6) == 0.0:
         return 0.0
     return round(100*(sol-lb)/sol,2)
+
+TOL = 0.0
 
 def which_better(sol,lb):
     if float(lb) > float(sol):
